@@ -56,7 +56,7 @@ portfolio-data/
 
 Section d'accueil avec présentation personnelle, statut de disponibilité et call-to-action.
 
-![Section Hero](../captures/Screenshot%202025-12-29%20011454.png)
+![Section Hero](/captures/hero-section.png)
 
 **Caractéristiques :**
 - Badge de disponibilité pour alternance
@@ -70,7 +70,7 @@ Section d'accueil avec présentation personnelle, statut de disponibilité et ca
 
 Présentation personnelle avec photo de profil et description du parcours.
 
-![Section À propos](../captures/Screenshot%202025-12-29%20011318.png)
+![Section À propos](/captures/a-propos-section.png)
 
 **Contenu :**
 - Photo de profil avec effet de lueur
@@ -82,7 +82,7 @@ Présentation personnelle avec photo de profil et description du parcours.
 
 Affichage des compétences techniques et soft skills.
 
-![Section Compétences](../captures/Screenshot%202025-12-29%20011348.png)
+![Section Compétences](/captures/competences-section.png)
 
 **Compétences techniques :**
 - **Data & Analytics** : Excel, Power BI, SQL, Python
@@ -101,7 +101,7 @@ Affichage des compétences techniques et soft skills.
 
 Grille interactive de projets data avec effets 3D au survol.
 
-![Section Projets](../captures/Screenshot%202025-12-29%20011414.png)
+![Section Projets](/captures/projects-section.png)
 
 **Projets présentés :**
 
@@ -139,7 +139,7 @@ Grille interactive de projets data avec effets 3D au survol.
 
 Formulaire de contact et informations de contact détaillées.
 
-![Section Contact](../captures/Screenshot%202025-12-29%20011240.png)
+![Section Contact](/captures/Screenshot%202025-12-29%20011240.png)
 
 **Informations de contact :**
 - **Email** : boimincedric@gmail.com
