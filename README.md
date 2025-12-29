@@ -56,7 +56,7 @@ portfolio-data/
 
 Section d'accueil avec présentation personnelle, statut de disponibilité et call-to-action.
 
-![Section Hero](/captures/Screenshot%202025-12-29%20011454.png)
+![Section Hero](/captures/Screenshot%202025-12-29%20011240.png)
 
 **Caractéristiques :**
 - Badge de disponibilité pour alternance
@@ -139,7 +139,7 @@ Grille interactive de projets data avec effets 3D au survol.
 
 Formulaire de contact et informations de contact détaillées.
 
-![Section Contact](/captures/Screenshot%202025-12-29%20011240.png)
+![Section Contact](/captures/Screenshot%202025-12-29%20011454.png)
 
 **Informations de contact :**
 - **Email** : boimincedric@gmail.com
