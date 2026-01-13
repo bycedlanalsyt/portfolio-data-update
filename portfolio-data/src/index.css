@@ -1756,3 +1756,119 @@ body {
 .footer a:hover {
   color: var(--text-main);
 }
+section {
+  scroll-margin-top: 90px;
+}
+.navbar-links {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar-links .nav-link {
+  background: none;
+  border: none;
+  padding: 0;
+
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover élégant */
+.navbar-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.navbar-links .nav-link:hover {
+  color: var(--accent);
+}
+
+.navbar-links .nav-link:hover::after {
+  width: 100%;
+}
+.navbar-links button {
+  all: unset;
+  cursor: pointer;
+  color: var(--text-main);
+}
+.navbar-logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--accent);
+}
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-actions button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-inner {
+    padding: 0 16px;
+  }
+
+  .navbar-links {
+    display: none; /* temporaire */
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+}

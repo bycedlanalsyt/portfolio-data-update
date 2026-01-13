@@ -2,6 +2,20 @@ import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../context/translations";
 import { useTheme } from "../context/ThemeContext";
 
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  const navbarHeight = 80;
+  const offsetTop =
+    element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+  window.scrollTo({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+};
+
 export default function Navbar() {
   const { lang, toggleLang } = useLanguage();
   const t = translations[lang] ?? translations.fr;
@@ -11,17 +25,37 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         {/* LOGO */}
-        <a href="#top" className="navbar-logo">
+        <button
+          className="navbar-logo"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           Cédric Boimin
-        </a>
+        </button>
 
         {/* NAVIGATION */}
-        <div className="navbar-links">
-          <a href="#about">{t.nav.about}</a>
-          <a href="#skills">{t.nav.skills}</a>
-          <a href="#projects">{t.nav.projects}</a>
-          <a href="#contact">{t.nav.contact}</a>
-        </div>
+    <div className="navbar-links">
+    <button className="nav-link" onClick={() => scrollToSection("hero")}>
+  {t.nav.home}
+</button>
+
+        <button className="nav-link" onClick={() => scrollToSection("about")}>
+          {t.nav.about}
+        </button>
+        <button className="nav-link" onClick={() => scrollToSection("skills")}>
+        {t.nav.skills}
+        </button>
+        <button className="nav-link" onClick={() => scrollToSection("projects")}>
+        {t.nav.projects}
+        </button>
+        <button className="nav-link" onClick={() => scrollToSection("contact")}>
+        {t.nav.contact}
+        </button>
+        <button className="nav-link" onClick={() => scrollToSection("footer")}>
+        Footer
+        </button>
+
+    </div>
+
 
         {/* ACTIONS */}
         <div className="navbar-actions">

@@ -5,8 +5,22 @@ export default function Hero() {
   const { lang } = useLanguage();
   const t = translations[lang];
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+  
+    const navbarHeight = 80;
+    const offsetTop =
+      element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+  
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  };  
+
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-content">
 
         {/* Badge */}
@@ -35,13 +49,21 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="hero-actions">
-          <a href="#projects" className="btn-primary">
-            {t.hero.ctaProjects} →
-          </a>
-          <a href="#contact" className="btn-secondary">
-            {t.hero.ctaContact}
-          </a>
-        </div>
+  <button
+    className="btn-primary"
+    onClick={() => scrollToSection("projects")}
+  >
+    {t.hero.ctaProjects} →
+  </button>
+
+  <button
+    className="btn-secondary"
+    onClick={() => scrollToSection("contact")}
+  >
+    {t.hero.ctaContact}
+  </button>
+</div>
+
 
         {/* Réseaux */}
         <div className="hero-socials">

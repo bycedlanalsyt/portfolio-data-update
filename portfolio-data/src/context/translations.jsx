@@ -1,6 +1,7 @@
 export const translations = {
   fr: {
     nav: {
+      home: "Accueil",
       about: "À propos",
       skills: "Compétences",
       projects: "Projets",
@@ -112,12 +113,13 @@ export const translations = {
       },
       contact: "Contact",
       location: "Poissy, France",
-      copyright: "© 2025 Cédric Boimin · Tous droits réservés",
+      copyright: "© 2026 Cédric Boimin · Tous droits réservés",
     },
   },
 
   en: {
     nav: {
+      home: "Home",
       about: "About",
       skills: "Skills",
       projects: "Projects",
@@ -229,7 +231,7 @@ export const translations = {
       },
       contact: "Get in touch",
       location: "Poissy, France",
-      copyright: "© 2025 Cedric Boimin · All rights reserved",
+      copyright: "© 2026 Cedric Boimin · All rights reserved",
     },
   },
 };

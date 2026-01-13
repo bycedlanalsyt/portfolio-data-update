@@ -9,7 +9,10 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="about-wrapper">
       <div className="about-photo">
-  <img src="/photo1.jpg" alt="Cédric Boimin" />
+      <img
+  src={`${import.meta.env.BASE_URL}photo1.jpg`}
+  alt="Cédric Boimin"
+/>
 </div>
 
         <div className="about-text">
